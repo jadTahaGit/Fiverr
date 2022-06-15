@@ -1,0 +1,168 @@
+/* neutralise every element */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.textWrapper {
+  position: relative;
+}
+
+.black {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: fit-content;
+}
+
+.blue {
+  color: blue;
+}
+
+#header,
+#footer {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+/* ########################################################################################### Header Section #################################################################################################
+######### */
+
+#practice {
+  font-weight: 800;
+}
+
+/* ########################################################################################### first second Third Section #################################################################################################
+######### */
+
+#firSecThird {
+  display: flex;
+  margin-left: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#first,
+#Seco,
+#Third {
+  text-transform: uppercase;
+}
+
+#first {
+  background-color: green;
+}
+#Seco {
+  background-color: red;
+}
+#Third {
+  background-color: yellow;
+}
+
+/* ########################################################################################### images Section #################################################################################################
+######### */
+
+#images {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+/* ########################################################################################### randomText Section #################################################################################################
+######### */
+
+#randomText {
+  padding: 10px;
+}
+
+#blueParag {
+  color: blue;
+}
+
+/* ########################################################################################### Checkboxes Section #################################################################################################
+######### */
+
+#checksquare {
+  padding: 20px;
+}
+
+#checksquare > .fa-ul > ul > li {
+  list-style: none;
+}
+
+/* ########################################################################################### table Section #################################################################################################
+######### */
+#tableSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+#table {
+  border: 2px solid black;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+#table > ul {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 3px;
+}
+
+#table > ul > li {
+  padding: 2px;
+  min-width: 40px;
+  list-style: none;
+  border: 2px solid black;
+  font-size: large;
+}
+
+#table > ul > .withoutBorder {
+  border: none;
+}
+
+/* ########################################################################################### ask Me Section #################################################################################################
+######### */
+
+#askMe {
+  background-color: greenyellow;
+  width: fit-content;
+  display: flex;
+  padding: 0 2px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 22px;
+  border: 1px solid black;
+}
+
+#iIcon {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
