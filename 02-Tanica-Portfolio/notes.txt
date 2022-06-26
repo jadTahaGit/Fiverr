@@ -1,0 +1,14 @@
+Classes:
+.container 
+fluid
+.rounded-circle
+.btn-group
+ .btn-lg
+.badge 
+.spinner-border
+.listgroup 
+ .cardheader 
+  .dropdown
+   .navbar  
+   .carousel 
+bg-success
