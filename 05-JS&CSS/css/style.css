@@ -1,0 +1,71 @@
+/* 2.2.1 Ausrichtung */
+
+tr {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+tr:nth-child(2) {
+  font-weight: bold;
+}
+
+td,
+th {
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  justify-content: start;
+  min-width: 180px;
+}
+
+/* 2.2.2 Selektoren */
+
+/* alternierend Gray */
+
+tr:nth-child(odd) {
+  background-color: gray;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr:nth-child(2),
+tr:nth-child(3),
+tr:nth-child(4),
+tr:nth-child(5) {
+  background-color: mediumblue;
+}
+
+tr:nth-child(6) {
+  background-color: orange;
+}
+
+tr:nth-child(7) {
+  background-color: green;
+}
+
+tr:nth-last-child(1),
+tr:nth-last-child(2) {
+  background-color: red;
+}
+
+tr:nth-last-child(3) {
+  background-color: orange;
+}
+
+tr:nth-child(3),
+tr:nth-child(5) {
+  background-color: lightblue;
+}
+
+tr:nth-last-child(2) {
+  background-color: lightcoral;
+}
