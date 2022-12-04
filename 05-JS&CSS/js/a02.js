@@ -19,12 +19,10 @@ function addArrayElement(element) {
 function getArrayElements(number, startIndex) {
   let result = [];
   // TODO: implement me
-  for (
-    let index = startIndex;
-    i < array.length || i == startIndex + number;
-    i++
-  ) {
-    result.push[array[i]];
+  if (startIndex > array.length) startIndex = startIndex % array.length;
+  for (let i = startIndex; i < array.length; i++) {
+    if (i == startIndex + number) break;
+    result.push(array[i]);
   }
   return result;
 }
@@ -33,6 +31,13 @@ function deleteArrayElements(number, startIndex, everyIth) {
   let arrayCopy = [...array];
   let removedItems = [];
   // TODO: implement me
+  if (startIndex > arrayCopy.length) startIndex = startIndex % arrayCopy.length;
+  for (let i = startIndex; i < arrayCopy.length; i = i + everyIth) {
+    if (i == startIndex + number) break;
+    removedItems.push(arrayCopy[i]);
+    arrayCopy[i] = null;
+  }
+
   return {
     newResult: arrayCopy,
     removedItems: removedItems,
